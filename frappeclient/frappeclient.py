@@ -140,7 +140,7 @@ class FrappeClient(object):
 
 		:param doc: dict or Document object to be submitted remotely'''
 		return self.post_request({
-			'cmd': 'frappe.client.submit',
+			'cmd': 'ducky.client.submit',
 			'doclist': json.dumps(doclist)
 		})
 
