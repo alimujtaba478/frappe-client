@@ -301,7 +301,6 @@ class FrappeClient(object):
 			try:
 				rjson = response.json()
 			except ValueError:
-				print(response.text)
 				raise
 
 			if rjson and ('exc' in rjson) and rjson['exc']:
